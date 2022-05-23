@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>lang="en>
+    <head>
+        <meta charset="utf 8">
+        </head>
+</html>
+
+<div class='bg'>
+  <div class='container'>
+    <div class='row h-100 align-items-center justify-content-center'>
+      <div class='col-lg-6 text-center shadow border-5'>
+        <h1>Looking for music?</h1>
+
+        <form class='d-flex' action='/artist-search' method='GET'>
+          <input
+            class='form-control me-2'
+            type='search'
+            placeholder='Search Artists'
+            aria-label='Search'
+            name='artistName'
+          />
+          <button class='btn btn-success' type='submit'>Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{! <div>
+  <form action='/artist-search' method='GET'>
+    <input type='text' name='artistName' id='artist-name' />
+    <button type='submit'>Search for an Artist</button>
+  </form>
+</div> }}

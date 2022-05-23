@@ -1,0 +1,10 @@
+<a href="/albums/someArtistIdGoesHere">View Albums</a>
+<div class='container'>
+  {{#each artists}}
+    <div class='card'>
+      <img src={{this.images.1.url}} alt='image' />
+      <p>{{this.name}}</p>
+      <a href='/albums/{{this.id}}'><button>View Albums</button></a>
+    </div>
+  {{/each}}
+</div>
